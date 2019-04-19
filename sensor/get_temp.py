@@ -40,7 +40,7 @@ def read_temp():
         if equals_pos != -1:
             temp_string = lines[1][equals_pos+2:]
             temp_c.append(float(temp_string) / 1000.0)
-            conn = mysql.connector.connect(host="192.168.1.56", user="pi", password="66446644", database="sensor_v1")
+            conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="sensor_v1")
             cursor = conn.cursor()
 
             sensor_line = ("insert into sensor_v1.record(timestamp, sensor_name, sensor_type, sensor_place, value) VALUES(NOW(), '%s' , '%s', '%s', '%s')")

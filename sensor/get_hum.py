@@ -28,7 +28,7 @@ def read_temp_raw(pin):
  
 def read_temp():
     i = 0
-    conn = mysql.connector.connect(host="192.168.1.56", user="pi", password="66446644", database="sensor_v1")
+    conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="sensor_v1")
     cursor = conn.cursor()
     for sensor in sonde:
         lines = read_temp_raw(sonde[i][0])

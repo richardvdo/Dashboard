@@ -7,5 +7,6 @@ then
 	exit 1
 else
 	python /home/pi/DashScreen/PiHomeDashScreen/sensor/get_hum.py
+	python /home/pi/DashScreen/PiHomeDashScreen/sensor/get_temp.py
 fi
 	exit 0
