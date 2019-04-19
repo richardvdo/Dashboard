@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# TERRE
+xplanet -conf /home/pi/DashScreen/PiHomeDashScreen/xplanet/xplanet.conf -output /var/www/html/xplanet/img/xplanet_earth.png -wait 120 -body earth -latitude 40 -longitude 10 -geometry 425x425 -background 0xff0000 &
+# LUNE
+xplanet -conf /home/pi/DashScreen/PiHomeDashScreen/xplanet/xplanet.conf -wait 600 -body moon -geometry 220x220 -output /var/www/html/xplanet/img/xplanet_moon.png -background 0xFF0000 &

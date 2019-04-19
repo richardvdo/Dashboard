@@ -1,0 +1,3 @@
+#!/bin/bash
+
+DISPLAY=:0.0 unclutter -idle 1 -jitter 10 &

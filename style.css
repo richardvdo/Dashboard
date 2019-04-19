@@ -1,0 +1,372 @@
+/* init */
+
+body
+{
+background-color  : rgba(255, 0, 0, 1);
+font-family       : Verdana, "Courier New", "Lucida Console";
+font-size         : 14px;
+font-weight       : normal;
+/* padding           : 0px; */
+margin            : 0px;
+overflow          : hidden;
+}
+
+div, table, tr, td, th, h1, h2, h3, a, span, p, pre, fieldset, input, textarea, form, img, select
+{
+font-family       : Verdana, "Courier New", "Lucida Console";
+font-size         : 14px;
+font-weight       : normal;
+padding           : 0px; 
+margin            : 0px;
+color             : #FFF;
+}
+
+/* main */
+
+div#main
+{
+width             : 1360px;
+height            : 770px;
+position          : relative;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+color             : #FFF;
+}
+
+div#etalon
+{
+top               : 0px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(0, 0, 255, 0.3);
+color             : #FFF;
+font-size         : 50px;
+}
+
+/* horloge */
+
+div#horloge
+{
+right             : 0px;
+top               : 0px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+color             : #FFF;
+font-weight       : bold;
+text-align        : center;
+}
+
+div.horloge_heure
+{
+font-size         : 180px;
+color             : #000;
+background-color  : rgba(255, 0, 0, 1);
+}
+
+div.horloge_date
+{
+font-size         : 50px;
+background-color  : rgba(255, 0, 0, 1);
+}
+
+span.horloge_grey
+{
+color             : #848484;
+font-size         : inherit;
+}
+
+/* meteo */
+
+div#meteo
+{
+right             : 0px;
+top               : 300px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+color             : #FFF;
+font-weight       : bold;
+text-align        : center;
+}
+
+div#meteo_black
+{
+right             : 0px;
+top               : 420px;
+width             : 600px;
+height            : 100px;
+position          : absolute;
+z-index           : 9999;
+background-color  : rgba(255, 0, 0, 1);
+}
+
+
+/* ping */
+
+div#ping
+{
+left              : 660px;
+bottom            : 0px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+width             : 130px; 
+}
+
+table.ping
+{
+width             : 100%; 
+}
+
+td.ping
+{
+font-size         : 14px;
+text-align        : left;
+border-radius     : 7px;
+padding           : 2px 5px;
+font-weight       : bold;
+}
+
+td.ping_up
+{
+color             : #000;
+}
+
+td.ping_sleep
+{
+color             : #777777;
+}
+
+td.ping_down
+{
+background-image  : url('pict/warning.gif');
+color             : #DD0000;;
+}
+
+
+/* mail */
+
+
+div#email
+{
+left              : 10px;
+top            : 430px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+width             : 630px; 
+
+}
+
+table.email
+{
+/* border-collapse: collapse;  */
+width             : 100%; 
+/* border-collapse: separate; */
+border-collapse: separate; 
+border-spacing: 0 10px;
+
+}
+
+td.email
+{
+text-align        : center;
+
+}
+
+td.email_top
+{
+width             : 70%;
+font-size         : 20px;
+color             : #000;
+font-weight       : bold;
+
+border-top: 3px solid #FFF;
+border-bottom: 3px solid #FFF;
+border-right :3px solid #FFF;
+border-top-right-radius: 14px;
+border-bottom-right-radius: 14px;
+}
+
+td.email_jour_top
+{
+width             : 15%;
+font-size         : 20px;
+color             : #000;
+font-weight       : bold;
+border-top-left-radius: 14px;
+border-bottom-left-radius: 14px;
+border-top: 3px solid #FFF;
+border-bottom: 3px solid #FFF;
+
+border-left :3px solid #FFF;
+
+}
+td.email_heure_top
+{
+width             : 10%;
+font-size         : 20px;
+color             : #000;
+font-weight       : bold;
+border-top: 3px solid #FFF;
+border-bottom: 3px solid #FFF;
+
+}
+
+td.email_bottom
+{
+color             : #777777;
+font-size         : 16px;
+}
+td.email_jour_bottom
+{
+color             : #777777;
+font-size         : 16px;
+}
+
+td.email_heure_bottom
+{
+color             : #777777;
+font-size         : 16px;
+}
+
+/* ical */
+
+
+div#cal
+{
+left              : 810px;
+width				: 540px;
+bottom            : 10px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+color             : #FFF;
+text-align        : center;
+}
+
+
+.ical_event
+{
+
+width: 100%;
+
+
+}
+.ical_detail
+{
+color             : #424242;
+font-weight       : bold;
+width             : 60%;
+padding-left      : 10px;
+padding-right     : 5px;
+text-align        : center;
+/* border-bottom: 1px dotted #888; */
+font-size         : 18px;
+}
+
+
+.ical_heure
+{
+
+width             : 20%;
+padding-left      : 10px;
+padding-right     : 10px;
+/* border-bottom: 1px dotted #888; */
+font-size         : 18px;
+}
+.ical_date
+{
+width             : 20%;
+color             : #000;
+padding-left      : 5px;
+padding-right     : 10px;
+font-weight       : bold;
+/* border-bottom: 1px dotted #888; */
+font-size         : 18px;
+}
+
+td.ical
+{
+padding-top      : 5px;
+padding-bottom     : 5px;
+
+border-bottom: 3px dotted #888;
+
+}
+
+td.icalfin
+{
+border-bottom: 3px dotted #000;
+}
+
+
+table.ical
+{
+border-collapse: collapse;
+width             : 100%;
+
+}
+
+/* earth */
+
+div#earth
+{
+width             : 425px;
+height            : 425px;
+left              : 0px;
+top               : -5px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+}
+
+/* moon */
+
+div#moon
+{
+width             : 220px;
+height            : 220px;
+left              : 435px;
+top               : 5px;
+position          : absolute;
+overflow          : hidden;
+background-color  : rgba(255, 0, 0, 1);
+}
+
+
+/* analytics */
+
+div#analytics
+{
+right             : 0px;
+bottom            : 130px;
+position          : absolute;
+overflow          : hidden;
+z-index           : 99999;
+background-color  : rgba(255, 0, 0, 1);
+border            : solid 0px #F00;
+}
+
+div#puissance
+{
+left             : 0px;
+bottom            : 2px;
+position          : absolute;
+overflow          : hidden;
+
+background-color  : rgba(255, 0, 0, 1);
+
+}
+
+div#daily_div
+{
+left             : 350px;
+bottom            : 0px;
+position          : absolute;
+overflow          : hidden;
+
+background-color  : rgba(255, 0, 0, 1);
+
+}
