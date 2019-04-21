@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dec22c57-1b96-4e02-a5f1-6b493a1ec784" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_hum.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_hum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_sensor_v1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/get_sensor_v1.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_temp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_impulsions.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_impulsions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="52" selection-start-line="52" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="374">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -29,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_impulsions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#19#42#0" expanded="true" />
               </folding>
@@ -151,6 +146,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20558777" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -164,7 +160,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32969433" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32969433" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23799127" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -243,15 +239,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="52" selection-start-line="52" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="374">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_impulsions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="e#19#42#0" expanded="true" />
           </folding>
