@@ -14,15 +14,15 @@ def cb_compteur_principal(channel):
     global compteur
     global compteur_principal
     global dateJour
-    log = open("/tmp/log_compteur_v2.log", "a")
+    log = open("/tmp/log_compteur_v3.log", "a")
     now = datetime.datetime.now()
     heure = now.strftime('%Y-%m-%d %H:%M:%S.%f')
     log.write('boucle de detection %s \n') % (int(compteur))
     if now.strftime('%d') != dateJour:
         log.write('if nouveau jour \n')
         log.write('init connection DB \n')
-        conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="solaire_v1")
-        cursor = conn.cursor()
+        # conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="solaire_v1")
+        # cursor = conn.cursor()
         log.write('connecte DB \n')
         dateJour = now.strftime('%d')
         dateJourComplete = now.strftime('%Y-%m-%d')
@@ -35,13 +35,13 @@ def cb_compteur_principal(channel):
         new_line = (insertline) % (var)
         log.write(new_line)
         log.write('\n')
-        print(new_line)
+        # print(new_line)
         log.write('envoie requete \n')
-        cursor.execute(new_line)
+        # cursor.execute(new_line)
         compteur_principal = 1
         log.write('Nouveau jour %s \n') % (int(dateJour))
-        conn.commit()
-        conn.close()
+        # conn.commit()
+        # conn.close()
         log.write('close connection DB \n')
     else:
         compteur_principal = compteur_principal + 1
@@ -50,8 +50,8 @@ def cb_compteur_principal(channel):
     if compteur >= 100:
         log.write('if compteur > 100 \n')
         log.write('init connection DB \n')
-        conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="solaire_v1")
-        cursor = conn.cursor()
+        # conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="solaire_v1")
+        # cursor = conn.cursor()
         log.write('connecte DB \n')
         line = "compteur principal - %s : %s kW\n" % (heure, float(compteur_principal/1000))
         log.write(line)
@@ -63,12 +63,12 @@ def cb_compteur_principal(channel):
         new_line = (insertline) % (var)
         log.write(new_line)
         log.write('\n')
-        print(new_line)
+        # print(new_line)
         log.write('envoie requete \n')
-        cursor.execute(new_line)
+        # cursor.execute(new_line)
         compteur = 0
-        conn.commit()
-        conn.close()
+        # conn.commit()
+        # conn.close()
         log.write('close connection DB \n')
     log.close()
 
