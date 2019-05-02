@@ -5,8 +5,8 @@ import time
 import datetime
 
 compteur_principal = 0.0
-compteur=0
-dateJour=0
+compteur = 0
+dateJour = 0
 
 
 def cb_compteur_principal(channel):
@@ -16,8 +16,23 @@ def cb_compteur_principal(channel):
     log = open("/tmp/log_compteur.log", "a")
     now = datetime.datetime.now()
     heure = now.strftime('%Y-%m-%d %H:%M:%S.%f')
-    log.write('boucle de detection %s \n') % (int(compteur))
+    log.write('boucle de detection %s \n' % int(compteur))
     if now.strftime('%d') != dateJour:
+        log.write('if nouveau jour \n')
+        log.write('init connection DB \n')
+        log.write('connecte DB \n')
+        dateJour = now.strftime('%d')
+        dateveille = now - datetime.timedelta(1)
+        timestampveille = int(datetime.datetime.strptime(dateveille, '%Y-%m-%d').strftime("%s"))
+        insertline = "insert into puissance.record(timestamp, watt) VALUES('%s', '%s')"
+        log.write(insertline)
+        log.write('\n')
+        var = (timestampveille, float(compteur_principal) / 1000.0)
+        new_line = insertline % var
+        log.write(new_line)
+        log.write('\n')
+        # print(new_line)
+        log.write('envoie requete \n')
         dateJour = now.strftime('%d')
         compteur_principal = 1
         log.write('Nouveau jour \n')
