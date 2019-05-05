@@ -56,7 +56,7 @@ def cb_compteur_principal(channel):
         line = "compteur principal - %s : %s kW\n" % (heure, float(compteur_principal/1000))
         log.write(line)
         timestamp = int(datetime.datetime.strptime(heure, '%Y-%m-%d %H:%M:%S.%f').strftime("%s"))
-        insertline = "insert into production.record(timestamp, watt, watt_totale) VALUES('%s',100,'%s')"
+        insertline = "insert into solaire_v1.production(timestamp, watt, watt_totale) VALUES('%s',100,'%s')"
         log.write(insertline)
         log.write('\n')
         var = (timestamp, float(compteur_principal) / 1000.0)
@@ -73,9 +73,9 @@ def cb_compteur_principal(channel):
     log.close()
 
 
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-    GPIO.add_event_detect(18, GPIO.FALLING, callback=cb_compteur_principal, bouncetime=70)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+6GPIO.add_event_detect(18, GPIO.FALLING, callback=cb_compteur_principal, bouncetime=70)
 
 
 while True:
