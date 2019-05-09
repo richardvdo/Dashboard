@@ -5,11 +5,10 @@ After=network-online.target
 [Service]
 Type=simple
  
-User=deluge
-Group=deluge
-UMask=007
+User=pi
+Group=pi
  
-ExecStart=/usr/bin/deluged -d
+ExecStart=python /home/pi/DashScreen/PiHomeDashScreen/sensor/get_solaire_v1.sh 
  
 Restart=on-failure
  
