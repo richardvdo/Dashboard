@@ -34,7 +34,7 @@ def cb_compteur_principal(channel):
     else:
         compteur_principal = compteur_principal + 1
     compteur = compteur + 1
-    if compteur >= 101:
+    if compteur == 100:
         conn = mysql.connector.connect(host="maison.lithium", user="pi", password="66446644", database="solaire_v1")
         cursor = conn.cursor()
         timestamp = time.mktime(datetime.datetime.now().timetuple())
